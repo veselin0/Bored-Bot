@@ -6,10 +6,11 @@ When the button is clicked, call out to the Bored API
 and replace the h4 with the activity from the API
 
 */
+//"https://www.boredapi.com/api/activity" // at boredapi server
 
 const btn = document.querySelector(".btn");
 btn.addEventListener('click', () => 
-fetch("https://www.boredapi.com/api/activity") // at boredapi server
+fetch("https://apis.scrimba.com/bored/api/activity") 
     .then(response => response.json())
     .then(data => {
         console.log(data);
