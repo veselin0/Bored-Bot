@@ -15,4 +15,6 @@ fetch("https://apis.scrimba.com/bored/api/activity")
     .then(data => {
         console.log(data);
         document.querySelector(".placeholder-element").textContent = data.activity;
+        document.querySelector(".title").textContent = "🤖Happy Bot 🤖";
+        document.body.classList.add("fun");
     }));
